@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacion2430933.Gasolina"
+             Title="Gasolina">
+
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Image
+                Source="gas.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+        <Label
+                Text="GASOLINA" TextColor="Coral"
+                FontSize="35"
+                HorizontalOptions="Center" />
+
+        <Label Text="Galones" TextColor="Yellow" FontSize="18"  />
+        <Entry Placeholder="Ingrese los galones" x:Name="galones" VerticalOptions="Center" Keyboard="Numeric"/>
+
+        <Label Text="Litros" TextColor="Yellow" FontSize="18" />
+        <Entry Placeholder="sus galones en Litros son de: " x:Name="litros" VerticalOptions="Center" IsEnabled="False"/>
+
+        <Label Text="Su total a pagar es: " TextColor="Red" FontSize="20" HorizontalOptions="Center"/>
+        <Entry Placeholder="PAGO TOTAL" x:Name="pago" VerticalOptions="Center" IsEnabled="False"/>
+
+        <Button Text="TOTAL...!!!" x:Name="total" VerticalOptions="Center" TextColor="Black" Clicked="total_Clicked"/>
+
+    </VerticalStackLayout>
+</ContentPage>

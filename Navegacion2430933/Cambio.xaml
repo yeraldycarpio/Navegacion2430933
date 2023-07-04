@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacion2430933.Cambio"
+             Title="Cambio">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="cambio.jpg"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Cambio"
+                TextColor="Yellow"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="40"
+                HorizontalOptions="Center" />
+
+            <Label Text="Costo del Articulo" FontSize="10" TextColor="Brown"/>
+            <Entry Placeholder="Introduzca el Costo del articulo comprado" x:Name="Costo" Keyboard="Numeric"/>
+
+            <Label Text="Dinero Entregado" FontSize="10" TextColor="Brown"/>
+            <Entry Placeholder="Introduzca el Dinero entregado" x:Name="Dinero" Keyboard="Numeric"/>
+
+            <Label Text="Cambio entregado al Cliente" FontSize="10" TextColor="Brown"/>
+            <Entry Placeholder="Su cambio es de:" x:Name="vuelto" IsEnabled="False" />
+
+            <Button Text="Cambio" x:Name="btnCambio" Clicked="btnCambio_Clicked" />
+
+        </VerticalStackLayout>
+    
+</ContentPage>

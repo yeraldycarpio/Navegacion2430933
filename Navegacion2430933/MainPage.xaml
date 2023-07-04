@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacion2430933.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="cerebro.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Button Text="Cambio" x:Name="cambio" Clicked="cambio_Clicked" TextColor="SpringGreen" FontSize="20"/>
+            <Button Text="Base y Altura" x:Name="BaseAltura" Clicked="BaseAltura_Clicked"  TextColor="SpringGreen" FontSize="20"/>
+            <Button Text="Dinosuario" x:Name="dinosaurio" Clicked="dinosaurio_Clicked"  TextColor="SpringGreen" FontSize="20"/>
+            <Button Text="Gasolina" x:Name="gasolina" Clicked="gasolina_Clicked"  TextColor="SpringGreen" FontSize="20"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+ 
